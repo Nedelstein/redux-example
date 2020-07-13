@@ -1,12 +1,18 @@
 import React from "react";
+import styled from "styled-components";
 import { hot } from "react-hot-loader";
 import TodoList from "./todos/TodoList.js";
-import "./app.css";
+
+const AppContainer = styled.div`
+  margin: 1rem;
+  font-family: Arial, Arial, Helvetica, sans-serif;
+  color: aqua;
+`;
 
 const App = () => (
-  <div className="app">
+  <AppContainer>
     <TodoList />
-  </div>
+  </AppContainer>
 );
 
 export default hot(module)(App);
